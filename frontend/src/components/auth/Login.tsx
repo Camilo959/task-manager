@@ -33,8 +33,9 @@ export const Login: React.FC = () => {
   ];
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background-light px-4">
-      <div className="w-full max-w-md bg-white rounded-xl shadow-md border border-[#dce0e5] p-8">
+    <main className="flex-grow flex items-center justify-center">
+    <div className="min-h-screen flex items-center justify-center bg-background-light">
+      <div className="w-full max-w-md bg-white rounded-xl shadow-md border border-[#dce0e5] p-8 md:p-10">
         {/* Headline */}
         <div className="mb-6 text-center">
           <h1 className="text-3xl font-bold text-gray-900">Sign in</h1>
@@ -60,9 +61,6 @@ export const Login: React.FC = () => {
           <div className="flex flex-col gap-2">
             <div className="flex justify-between items-center">
               <label className="text-sm font-medium text-gray-700">Password</label>
-              <a href="#" className="text-xs font-semibold text-primary hover:underline">
-                Forgot?
-              </a>
             </div>
             <input
               type="password"
@@ -108,5 +106,6 @@ export const Login: React.FC = () => {
         </div>
       </div>
     </div>
+    </main>
   );
 };
