@@ -3,7 +3,7 @@ import jwt from 'jsonwebtoken';
 import { UserRole } from '../types';
 
 const JWT_SECRET = process.env.JWT_SECRET || 'your-secret-key-change-in-production';
-const JWT_EXPIRES_IN = '24h';
+const JWT_EXPIRES_IN = '1h';
 
 export interface TokenPayload {
   id: string;
