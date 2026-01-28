@@ -52,32 +52,3 @@ export interface AuthResponse {
   token: string;
   user: User;
 }
-
-// DTOs para crear/actualizar
-export interface CreateTaskDTO {
-  title: string;
-  description: string;
-  status?: TaskStatus;
-  assignedTo?: string; // ID del usuario asignado
-}
-
-export interface UpdateTaskDTO {
-  title?: string;
-  description?: string;
-  status?: TaskStatus;
-  assignedTo?: string;
-}
-
-export interface CreateUserDTO {
-  email: string;
-  password: string;
-  name: string;
-  role: UserRole;
-}
-
-export interface UpdateUserDTO {
-  email?: string;
-  password?: string;
-  name?: string;
-  role?: UserRole;
-}

@@ -1,6 +1,6 @@
 // src/models/User.ts
 import { prisma } from '../config/database';
-import { User, UserRole, Prisma } from '../../generated/prisma';
+import { User, Prisma } from '../../generated/prisma';
 
 export class UserModel {
   static async findAll(): Promise<Omit<User, 'password'>[]> {

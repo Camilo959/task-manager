@@ -72,8 +72,3 @@ class ApiService {
 }
 
 export const api = new ApiService();
-
-// src/.env (crear este archivo)
-/*
-VITE_API_URL=http://localhost:3000/api
-*/
